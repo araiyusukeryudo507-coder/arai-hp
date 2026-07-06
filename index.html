@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>荒井悠輔 | 税理士・生成AIセミナー講師 公式サイト</title>
+<meta name="description" content="荒井悠輔（税理士／S&F株式会社代表取締役）公式サイト。会計事務所・士業向け生成AIセミナー講師。Claude Code・freee MCPによるAI実装、登壇実績38件。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@600;700;900&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0d1b33; --navy2:#13264a; --navy3:#1a3260;
+  --gold:#c9a24b; --gold-l:#e3c883; --ink:#22304a; --ink-soft:#5a6a85;
+  --paper:#f7f5f0; --white:#ffffff; --line:#e3ddd0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);background:var(--paper);line-height:1.85;font-size:16px}
+.serif{font-family:'Noto Serif JP',serif}
+.en{font-family:'Cormorant Garamond',serif;letter-spacing:.18em}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* ===== Header ===== */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,51,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,75,.25)}
+.nav{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+.brand{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.08em}
+.brand small{display:block;font-size:10px;color:var(--gold-l);letter-spacing:.3em;font-weight:400}
+.nav ul{display:flex;gap:26px;list-style:none}
+.nav ul a{color:rgba(255,255,255,.85);text-decoration:none;font-size:13px;letter-spacing:.1em;transition:color .2s}
+.nav ul a:hover{color:var(--gold-l)}
+.nav .cta{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy)!important;padding:8px 18px;border-radius:999px;font-weight:700}
+@media(max-width:860px){.nav ul{display:none}}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;background:
+  radial-gradient(1200px 600px at 80% -10%,rgba(201,162,75,.18),transparent 60%),
+  radial-gradient(900px 500px at -10% 110%,rgba(201,162,75,.10),transparent 60%),
+  linear-gradient(160deg,var(--navy) 0%,var(--navy2) 55%,var(--navy3) 100%);
+  color:#fff;overflow:hidden;padding:120px 24px 80px}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:56px 56px;mask-image:radial-gradient(ellipse at 70% 30%,#000 30%,transparent 75%)}
+.hero-inner{position:relative;max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;width:100%}
+.kicker{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(201,162,75,.5);color:var(--gold-l);padding:6px 16px;border-radius:999px;font-size:12px;letter-spacing:.22em;margin-bottom:26px}
+.kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.25;font-weight:900;letter-spacing:.04em}
+.hero h1 .accent{background:linear-gradient(120deg,var(--gold-l),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .name-en{margin-top:14px;color:rgba(255,255,255,.55);font-size:14px;letter-spacing:.42em}
+.hero p.lead{margin-top:26px;color:rgba(255,255,255,.82);font-size:15.5px;max-width:560px}
+.hero-btns{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;padding:15px 34px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:.08em;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy);box-shadow:0 8px 24px rgba(201,162,75,.35)}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.portrait-wrap{position:relative;justify-self:center}
+.portrait{width:min(340px,70vw);aspect-ratio:4/5;object-fit:cover;border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.45);border:1px solid rgba(201,162,75,.4)}
+.portrait-frame{position:absolute;inset:-16px 16px 16px -16px;border:1px solid rgba(201,162,75,.5);border-radius:16px;z-index:-1}
+.badge-book{position:absolute;bottom:-18px;right:-10px;background:var(--white);color:var(--ink);border-radius:12px;padding:12px 16px;font-size:11.5px;line-height:1.5;box-shadow:0 12px 30px rgba(0,0,0,.35);max-width:230px;border-left:3px solid var(--gold)}
+.badge-book b{color:var(--navy)}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.portrait-wrap{order:-1}.portrait{width:min(260px,64vw)}}
+
+/* ===== Stats ===== */
+.stats{background:var(--navy);border-top:1px solid rgba(201,162,75,.3);color:#fff;padding:34px 24px}
+.stats-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat .num{font-family:'Cormorant Garamond',serif;font-size:46px;color:var(--gold-l);line-height:1;font-weight:500}
+.stat .num small{font-size:20px;margin-left:2px}
+.stat .lbl{font-size:12px;color:rgba(255,255,255,.7);letter-spacing:.14em;margin-top:8px}
+@media(max-width:720px){.stats-inner{grid-template-columns:repeat(2,1fr);row-gap:30px}}
+
+/* ===== Sections ===== */
+section{padding:96px 24px}
+.wrap{max-width:1120px;margin:0 auto}
+.sec-head{margin-bottom:52px}
+.sec-head .en-label{color:var(--gold);font-size:13px;letter-spacing:.35em;display:block;margin-bottom:10px}
+.sec-head h2{font-family:'Noto Serif JP',serif;font-size:clamp(26px,3.4vw,36px);color:var(--navy);font-weight:700;letter-spacing:.06em}
+.sec-head h2::after{content:"";display:block;width:56px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:18px}
+.sec-head p.sub{margin-top:18px;color:var(--ink-soft);max-width:680px;font-size:14.5px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about-txt p{margin-bottom:1.2em;font-size:15px}
+.about-txt .lead-line{font-family:'Noto Serif JP',serif;font-size:20px;color:var(--navy);font-weight:700;line-height:1.9;margin-bottom:1.4em}
+.cred{background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(13,27,51,.06)}
+.cred h3{background:var(--navy);color:var(--gold-l);font-size:14px;letter-spacing:.2em;padding:16px 24px;font-weight:700}
+.cred table{width:100%;border-collapse:collapse;font-size:14px}
+.cred td{padding:14px 24px;border-top:1px solid var(--line);vertical-align:top}
+.cred td:first-child{width:96px;color:var(--gold);font-weight:700;white-space:nowrap}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+/* Career timeline */
+.timeline{margin-top:44px;border-left:2px solid var(--line);padding-left:32px;display:grid;gap:30px}
+.tl-item{position:relative}
+.tl-item::before{content:"";position:absolute;left:-41px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--gold)}
+.tl-item h4{font-family:'Noto Serif JP',serif;color:var(--navy);font-size:17px}
+.tl-item p{font-size:14px;color:var(--ink-soft);margin-top:4px}
+
+/* Strengths */
+.dark{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff}
+.dark .sec-head h2{color:#fff}
+.dark .sec-head p.sub{color:rgba(255,255,255,.65)}
+.str-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.str-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,162,75,.28);border-radius:14px;padding:30px 26px;transition:transform .25s,background .25s}
+.str-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.07)}
+.str-card .no{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:30px;font-style:italic}
+.str-card h3{font-family:'Noto Serif JP',serif;font-size:16.5px;margin:10px 0 12px;color:var(--gold-l);line-height:1.6}
+.str-card p{font-size:13.5px;color:rgba(255,255,255,.75)}
+@media(max-width:860px){.str-grid{grid-template-columns:1fr}}
+
+/* Seminar */
+.sem-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.sem-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:32px;box-shadow:0 8px 24px rgba(13,27,51,.05);position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.sem-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(13,27,51,.10)}
+.sem-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-l))}
+.sem-card h3{font-family:'Noto Serif JP',serif;color:var(--navy);font-size:19px;margin-bottom:14px}
+.sem-meta{display:grid;gap:8px;font-size:13.5px}
+.sem-meta div{display:flex;gap:10px}
+.sem-meta .k{flex:none;background:var(--navy);color:var(--gold-l);font-size:11px;padding:2px 10px;border-radius:4px;height:fit-content;margin-top:3px;letter-spacing:.1em}
+@media(max-width:860px){.sem-grid{grid-template-columns:1fr}}
+
+/* Track record */
+.hl-quote{background:var(--white);border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:26px 30px;margin-bottom:44px;box-shadow:0 8px 24px rgba(13,27,51,.05)}
+.hl-quote p{font-family:'Noto Serif JP',serif;font-size:17px;color:var(--navy);font-weight:700}
+.hl-quote small{color:var(--ink-soft);font-size:13px}
+.rec-table-wrap{background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(13,27,51,.06)}
+.rec-scroll{max-height:520px;overflow-y:auto}
+table.rec{width:100%;border-collapse:collapse;font-size:13.5px}
+table.rec th{position:sticky;top:0;background:var(--navy);color:var(--gold-l);text-align:left;padding:14px 18px;font-size:12px;letter-spacing:.14em;font-weight:700;z-index:1}
+table.rec td{padding:13px 18px;border-top:1px solid var(--line);vertical-align:top}
+table.rec tr:hover td{background:#faf7ef}
+table.rec td:first-child{color:var(--gold);font-weight:700;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-size:15px}
+table.rec td:nth-child(2){white-space:nowrap;color:var(--ink-soft)}
+.logos{margin-top:40px;text-align:center;color:var(--ink-soft);font-size:13px;letter-spacing:.05em}
+.logos b{color:var(--navy)}
+
+/* Media */
+.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.media-card{background:rgba(255,255,255,.05);border:1px solid rgba(201,162,75,.28);border-radius:14px;padding:30px 26px;text-decoration:none;color:#fff;transition:transform .25s,background .25s;display:block}
+.media-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.09)}
+.media-card .icon{font-size:26px}
+.media-card h3{font-family:'Noto Serif JP',serif;color:var(--gold-l);font-size:17px;margin:12px 0 8px}
+.media-card p{font-size:13px;color:rgba(255,255,255,.72)}
+.media-card .link{margin-top:14px;font-size:12px;color:var(--gold);letter-spacing:.12em}
+.book-feature{margin-top:26px;background:rgba(255,255,255,.05);border:1px solid rgba(201,162,75,.28);border-radius:14px;padding:30px 26px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.book-feature .icon{font-size:34px}
+.book-feature h3{font-family:'Noto Serif JP',serif;color:var(--gold-l);font-size:16.5px;line-height:1.7}
+.book-feature p{font-size:13px;color:rgba(255,255,255,.72)}
+.book-feature a{color:var(--gold);font-size:13px}
+@media(max-width:860px){.media-grid{grid-template-columns:1fr}}
+
+/* Contact */
+.contact-box{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:56px;box-shadow:0 16px 44px rgba(13,27,51,.08);display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact-box h3{font-family:'Noto Serif JP',serif;color:var(--navy);font-size:22px;margin-bottom:18px}
+.contact-box p{font-size:14.5px;color:var(--ink-soft)}
+.contact-list{margin-top:24px;display:grid;gap:14px}
+.contact-list a{display:flex;align-items:center;gap:14px;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 20px;font-size:14.5px;color:var(--ink);font-weight:500;transition:border-color .2s,transform .2s}
+.contact-list a:hover{border-color:var(--gold);transform:translateX(4px)}
+.contact-list .ic{flex:none;width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--gold-l);display:grid;place-items:center;font-size:16px}
+.ask{background:var(--paper);border-radius:14px;padding:28px}
+.ask h4{color:var(--navy);font-size:14.5px;margin-bottom:14px;letter-spacing:.06em}
+.ask ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;font-size:13px;color:var(--ink-soft)}
+.ask li::before{content:"◆";color:var(--gold);font-size:9px;margin-right:8px;vertical-align:1px}
+.ask .note{margin-top:18px;font-size:12.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:14px}
+@media(max-width:860px){.contact-box{grid-template-columns:1fr;padding:34px 24px}.ask ul{grid-template-columns:1fr}}
+
+/* Footer */
+footer{background:var(--navy);color:rgba(255,255,255,.6);text-align:center;padding:44px 24px;font-size:12.5px;letter-spacing:.08em}
+footer .en{color:var(--gold);letter-spacing:.35em;font-size:15px;margin-bottom:10px}
+
+/* Reveal animation */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="#top">荒井 悠輔<small>YUSUKE ARAI — TAX ACCOUNTANT × AI</small></a>
+    <ul>
+      <li><a href="#about">プロフィール</a></li>
+      <li><a href="#strength">強み</a></li>
+      <li><a href="#seminar">セミナー</a></li>
+      <li><a href="#record">登壇実績</a></li>
+      <li><a href="#media">発信・著書</a></li>
+      <li><a class="cta" href="#contact">登壇のご相談</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="kicker">税理士 × 生成AI セミナー講師</span>
+      <h1 class="serif">会計・税務の現場に、<br>AIを<span class="accent">「実装」</span>する。</h1>
+      <div class="name-en en">YUSUKE ARAI &nbsp;|&nbsp; 荒井 悠輔</div>
+      <p class="lead">税理士／S&amp;F株式会社 代表取締役。税理士法人ベリーベストで法人税務から経営企画までを担い、5名から100名規模への組織成長を最前線で経験。現在は ChatGPT・Claude・Claude Code・freee MCP を活用した会計事務所・士業向けの生成AIセミナー・研修・講演を中心に活動しています。</p>
+      <div class="hero-btns">
+        <a class="btn btn-gold" href="#contact">セミナー登壇を相談する</a>
+        <a class="btn btn-ghost" href="#record">登壇実績を見る</a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait-frame"></div>
+      <img class="portrait" src="profile.jpg" alt="荒井悠輔 プロフィール写真" onerror="this.style.display='none';document.querySelector('.portrait-frame').style.display='none'">
+      <div class="badge-book">著書<br><b>『会計事務所のための製販分離戦略』</b><br>（FKRブックス／Kindle）</div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat rv"><div class="num" data-count="38">0</div><div class="lbl">登壇実績（2020–2026）</div></div>
+    <div class="stat rv"><div class="num" data-count="350">0<small>名+</small></div><div class="lbl">弥生会計AIセミナー集客</div></div>
+    <div class="stat rv"><div class="num" data-count="100">0<small>名</small></div><div class="lbl">5名→100名の組織成長を経験</div></div>
+    <div class="stat rv"><div class="num" data-count="7">0<small>年</small></div><div class="lbl">不動産投資の実践歴</div></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en-label en">PROFILE</span><h2>プロフィール</h2></div>
+    <div class="about-grid">
+      <div class="about-txt rv">
+        <p class="lead-line">「子どもたちのために、より良い世界を作る」——<br>経営者と、経営者を支える士業の力を、AIでブーストする。</p>
+        <p>「資格の大原」で税理士講座・会計学の講師として、大学生から社会人まで幅広く会計を教えたのち、税理士法人ベリーベストへ。法人部門の責任者を経て経営企画室の室長として、採用・評価・教育・営業・情報発信を統括。スタッフ5名規模から100名規模への成長過程を、現場の最前線で経験しました。</p>
+        <p>現在は、Claude Code や freee MCP を活用した会計事務所・士業向けの生成AI活用を、セミナー・研修・講演の形でお伝えしています。弥生会計のAIセミナーでは350名超を集客し、終了10分で約100件のアンケートが寄せられるなど、現場の高い関心を実感しています。</p>
+        <p>並行して、現役の不動産投資家（投資歴7年・戸建8戸・アパート2棟）として資産税・事業承継・融資・補助金・税務調査対策にも精通。理論だけでなく、自分自身が当事者として経験してきたことが強みです。</p>
+      </div>
+      <div>
+        <div class="cred rv">
+          <h3>基本情報・資格</h3>
+          <table>
+            <tr><td>氏名</td><td>荒井 悠輔（あらい ゆうすけ）</td></tr>
+            <tr><td>肩書</td><td>税理士／会計事務所向け生成AIセミナー講師／S&amp;F株式会社 代表取締役</td></tr>
+            <tr><td>所属</td><td>税理士法人ベリーベスト（経営企画室 室長）／株式会社ベリーベストサポートオフィス 代表取締役</td></tr>
+            <tr><td>資格</td><td>税理士／認定心理士／宅地建物取引士（試験合格）／BATIC アカウンティングマネージャーレベル</td></tr>
+            <tr><td>学歴</td><td>筑波大学大学院 ビジネス科学研究科 企業法学専攻 修了（法学修士）</td></tr>
+            <tr><td>研鑽</td><td>東京大学エクステンション データサイエンス講座 修了／東大松尾研 応用LLM講座・AI経営寄付講座 修了、GCI講座 受講中</td></tr>
+            <tr><td>専門</td><td>法人顧問／税務セカンドオピニオン／経理部門構築／管理会計導入／財務分析／資金繰りコンサルティング</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="timeline rv">
+      <div class="tl-item"><h4>資格の大原 — 税理士講座・会計学 講師</h4><p>大学生から社会人まで、幅広い受講生に会計を指導。「初心者に噛み砕いて伝える力」の原点。</p></div>
+      <div class="tl-item"><h4>税理士法人ベリーベスト — 法人部門責任者 → 経営企画室 室長</h4><p>法人税務の実務を経て、採用・評価・教育・営業・情報発信を統括。5名→100名規模への急成長を牽引。グループ会社・株式会社ベリーベストサポートオフィス代表取締役を兼務。</p></div>
+      <div class="tl-item"><h4>S&amp;F株式会社 代表取締役／生成AIセミナー講師として活動</h4><p>Claude Code・freee MCP などを用いた会計事務所×AIの実装・研修・セミナー登壇を中心に活動。著書『会計事務所のための製販分離戦略』を刊行。週刊ダイヤモンドにインタビュー掲載（2021年2月）。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="strength" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en-label en">STRENGTHS</span><h2>セミナー講師としての強み</h2>
+      <p class="sub">「AIに詳しい人」でも「会計に詳しい人」でもなく、その両方を実務レベルで語れることが最大の強みです。</p></div>
+    <div class="str-grid">
+      <div class="str-card rv"><div class="no en">01</div><h3>税理士としての実務理解 × AI</h3><p>税理士・会計事務所の実務を深く理解したうえで、生成AI活用を「現場で使える形」でわかりやすく伝えます。</p></div>
+      <div class="str-card rv"><div class="no en">02</div><h3>プロ講師としての伝える力</h3><p>資格の大原での税理士講座講師の経験があり、AI初心者にも噛み砕いて説明できます。</p></div>
+      <div class="str-card rv"><div class="no en">03</div><h3>組織成長のリアルな経験</h3><p>税理士法人の5名規模から100名規模への成長過程を経験。AI活用を組織運営・人材育成・業務標準化と結びつけて話せます。</p></div>
+      <div class="str-card rv"><div class="no en">04</div><h3>最新AIツールの実践知</h3><p>ChatGPT・Claude・Gemini・Claude Code・freee MCP を、会計事務所・バックオフィスの実務文脈で紹介できます。</p></div>
+      <div class="str-card rv"><div class="no en">05</div><h3>豊富な登壇実績</h3><p>freee、弥生、OBC、日税ビジネスサービス、士業団体、大学院など、多様な主催者での登壇実績があります。</p></div>
+      <div class="str-card rv"><div class="no en">06</div><h3>当事者としての経験</h3><p>不動産投資家（戸建8戸・アパート2棟）としての資産税・融資・事業承継の実体験が、理論に厚みを与えています。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="seminar">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en-label en">SEMINAR</span><h2>提供できるセミナーテーマ</h2>
+      <p class="sub">生成AIの基本から、会計事務所業務の効率化、AI時代の組織づくり、Claude Codeハンズオンまで。セミナー・研修・講演の形式で、オンライン／対面いずれも対応します。</p></div>
+    <div class="sem-grid">
+      <div class="sem-card rv"><h3>生成AI入門セミナー</h3>
+        <div class="sem-meta">
+          <div><span class="k">対象</span><span>AI初心者、一般社員、士業事務所スタッフ</span></div>
+          <div><span class="k">内容</span><span>ChatGPT・Claude・Geminiの基本、プロンプトの考え方、業務利用時の注意点</span></div>
+          <div><span class="k">時間</span><span>60〜90分</span></div>
+        </div></div>
+      <div class="sem-card rv"><h3>会計事務所向けAI活用セミナー</h3>
+        <div class="sem-meta">
+          <div><span class="k">対象</span><span>税理士法人、会計事務所、経理代行会社</span></div>
+          <div><span class="k">内容</span><span>メール・議事録・資料作成・チェック業務・教育・属人化解消など、会計事務所業務の生成AI活用</span></div>
+          <div><span class="k">時間</span><span>90分〜2時間</span></div>
+        </div></div>
+      <div class="sem-card rv"><h3>AI時代の会計事務所経営セミナー</h3>
+        <div class="sem-meta">
+          <div><span class="k">対象</span><span>税理士、会計事務所代表、幹部、業界団体</span></div>
+          <div><span class="k">内容</span><span>生成AIが事務所経営に与える影響、人材育成、業務標準化、採用、教育、組織づくり</span></div>
+          <div><span class="k">時間</span><span>60〜90分</span></div>
+        </div></div>
+      <div class="sem-card rv"><h3>Claude Codeハンズオンセミナー</h3>
+        <div class="sem-meta">
+          <div><span class="k">対象</span><span>Claude Codeに関心がある士業・中小企業・バックオフィス担当者</span></div>
+          <div><span class="k">内容</span><span>Claude Codeの基本、非エンジニアによる業務改善ツール作成、実務活用の考え方</span></div>
+          <div><span class="k">時間</span><span>2時間〜半日</span></div>
+        </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="record" style="background:#f0ede5">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en-label en">TRACK RECORD</span><h2>登壇実績 — 38件（2020〜2026年）</h2></div>
+    <div class="hl-quote rv">
+      <p>弥生会計主催のAIセミナーでは350名超を集客。終了10分で約100件のアンケートが寄せられ、第2回の登壇依頼へ。</p>
+      <small>そのほか freee 共催セミナー、日税ビジネスサービス「税理士事務所 成長戦略 5Days セミナー」、東洋大学大学院での講義など。</small>
+    </div>
+    <div class="rec-table-wrap rv">
+      <div class="rec-scroll">
+      <table class="rec">
+        <thead><tr><th>#</th><th>日付</th><th>タイトル</th><th>主催</th></tr></thead>
+        <tbody>
+          <tr><td>38</td><td>2026年6月3日</td><td>公認会計士・税理士限定 生成AIセミナー／Claude Code実演！</td><td>AI研究会</td></tr>
+          <tr><td>37</td><td>2026年6月1日</td><td>Claude Codeハンズオンセミナー</td><td>全国中小企業経友会事業協同組合</td></tr>
+          <tr><td>36</td><td>2026年5月25日</td><td>Claude Code丸わかりセミナー</td><td>全国中小企業経友会事業協同組合</td></tr>
+          <tr><td>35</td><td>2026年5月20日</td><td>5名から100名に急成長！小規模事務所から始める規模別採用・教育・定着戦略</td><td>株式会社アックスコンサルティング</td></tr>
+          <tr><td>34</td><td>2026年5月18日</td><td>オンラインサロン上級編　Claude Code 実践デモ企画</td><td>AI研究会</td></tr>
+          <tr><td>33</td><td>2026年5月13日</td><td>Claude Code丸わかりセミナー</td><td>全国中小企業経友会事業協同組合</td></tr>
+          <tr><td>32</td><td>2026年5月12日</td><td>税理士法人のためのAI実務活用・最短ルート</td><td>株式会社エッサム</td></tr>
+          <tr><td>31</td><td>2026年4月27日</td><td>Claude Codeハンズオンセミナー</td><td>全国中小企業経友会事業協同組合</td></tr>
+          <tr><td>30</td><td>2026年4月16日</td><td>税理士事務所 成長戦略 5Days セミナー　AIで変わる事務所経営！最新テクノロジー＆セキュリティ戦略</td><td>株式会社日税ビジネスサービス</td></tr>
+          <tr><td>29</td><td>2026年4月8日</td><td>Claude Codeハンズオンセミナー</td><td>全国中小企業経友会事業協同組合</td></tr>
+          <tr><td>28</td><td>2026年3月27日</td><td>Claude Codeハンズオンセミナー</td><td>全国中小企業経友会事業協同組合</td></tr>
+          <tr><td>27</td><td>2026年3月17日</td><td>税理士事務所 成長戦略 5Days セミナー　少人数で成果を最大化！業務効率化の実践法</td><td>株式会社日税ビジネスサービス</td></tr>
+          <tr><td>26</td><td>2026年2月18日</td><td>税理士事務所 成長戦略 5Days セミナー　紹介に頼らない！成長を加速させる営業＆マーケ戦略</td><td>株式会社日税ビジネスサービス</td></tr>
+          <tr><td>25</td><td>2026年1月16日</td><td>税理士事務所 成長戦略 5Days セミナー　辞めない組織を作る！評価と定着の仕組み</td><td>株式会社日税ビジネスサービス</td></tr>
+          <tr><td>24</td><td>2025年12月12日</td><td>税理士事務所 成長戦略 5Days セミナー　勝ちパターンを作る！採用＆育成戦略</td><td>株式会社日税ビジネスサービス</td></tr>
+          <tr><td>23</td><td>2025年11月5日</td><td>税理士法人ベリーベスト流 採用困難時代におけるAIを活用した採用戦略</td><td>株式会社エッサム</td></tr>
+          <tr><td>22</td><td>2025年10月3日</td><td>税理士事務所におけるAI活用方法について</td><td>東洋大学大学院法学研究科</td></tr>
+          <tr><td>21</td><td>2025年10月1日</td><td>しらないと損をする。税理士事務所におけるAI活用方法について</td><td>全国中小企業経友会事業協同組合</td></tr>
+          <tr><td>20</td><td>2025年9月18日</td><td>新人が1年で15社対応！？属人的OJTに頼らない"新・教育戦略"とは？</td><td>株式会社アックスコンサルティング</td></tr>
+          <tr><td>19</td><td>2025年9月11日</td><td>ゼイカイ会計博覧会2025【"あの人がいないと回らない"をなくすには】〜業務属人化の見える化と分散化戦略〜</td><td>株式会社ゼイカイ</td></tr>
+          <tr><td>18</td><td>2025年2月7日</td><td>会計事務所のための製販分離戦略</td><td>オービックビジネスコンサルタント</td></tr>
+          <tr><td>17</td><td>2025年2月4日</td><td>生成AIは脅威か救世主か？会計事務所のこれからを語る</td><td>freee・株式会社エフアンドエム共催</td></tr>
+          <tr><td>16</td><td>2024年11月26日</td><td>生成AIで出来る　会計事務所業務の効率化セミナー</td><td>freee共催</td></tr>
+          <tr><td>15</td><td>2024年10月18日</td><td>会計事務所ミス撲滅セミナー　AI活用編</td><td>弥生会計</td></tr>
+          <tr><td>14</td><td>2024年5月14日</td><td>優秀な人材採用と地方における事務センターの設立について</td><td>株式会社日税ビジネスサービス</td></tr>
+          <tr><td>13</td><td>2024年4月19日</td><td>会計事務所ミス撲滅セミナー</td><td>弥生会計</td></tr>
+          <tr><td>12</td><td>2024年3月19日</td><td>長く、真面目に、働ける　記帳スタッフ狙い打ちの採用術</td><td>freee共催</td></tr>
+          <tr><td>11</td><td>2023年8月23日</td><td>インボイス＆電帳法はチャンス　ワークフローを仕組化してバックオフィス業務時間を大幅削減</td><td>freee共催</td></tr>
+          <tr><td>10</td><td>2023年7月14日</td><td>電子帳簿保存法とインボイス制度におけるシステムが満たすべき4つの条件</td><td>freee共催</td></tr>
+          <tr><td>9</td><td>2023年7月14日</td><td>バックオフィスをスマートに！経理業務のDX化アウトソース活用</td><td>freee共催</td></tr>
+          <tr><td>8</td><td>2023年5月16日</td><td>インボイス制度導入にあたっての経理実務の変化</td><td>弥生会計</td></tr>
+          <tr><td>7</td><td>2022年12月13日</td><td>ベリーベスト流「顧客向け商品＆社内制度」の企画思考方法</td><td>KACHIEL</td></tr>
+          <tr><td>6</td><td>2021年1月12日</td><td>ステージごとの税理士・クラウドの上手な使い方・落とし穴</td><td>ゼロワンブースター共催</td></tr>
+          <tr><td>5</td><td>2020年10月21日</td><td>テレワークで実践できる経理構築とオンライン監査</td><td>freee共催</td></tr>
+          <tr><td>4</td><td>2020年10月21日</td><td>コロナ対策連続ウェビナー</td><td>セールスフォース共催</td></tr>
+          <tr><td>3</td><td>2020年7月13日</td><td>創業初期における税務・会計ウェビナー</td><td>弁護士法人ベリーベスト共催</td></tr>
+          <tr><td>2</td><td>2020年6月25日</td><td>立ち上げ前に尋いてほしい！スタートアップのEXIT戦略 〜SaaS事例から〜</td><td>ゼロワンブースター</td></tr>
+          <tr><td>1</td><td>2020年3月27日</td><td>IPO準備に最適なバックオフィス体制とは</td><td>freee共催</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <p class="logos rv">主な登壇先・共催：<b>freee</b> ／ <b>弥生会計</b> ／ <b>オービックビジネスコンサルタント（OBC）</b> ／ <b>日税ビジネスサービス</b> ／ <b>エッサム</b> ／ <b>アックスコンサルティング</b> ／ <b>東洋大学大学院</b> ほか</p>
+  </div>
+</section>
+
+<section id="media" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en-label en">MEDIA &amp; BOOK</span><h2>発信・著書</h2></div>
+    <div class="media-grid">
+      <a class="media-card rv" href="https://www.youtube.com/@ai_zeirishi_arai" target="_blank" rel="noopener">
+        <div class="icon">▶️</div><h3>YouTube「AI税理士チャンネル」</h3>
+        <p>税務・会計・AIに関する情報を、実演を交えてわかりやすく発信中。</p>
+        <div class="link">youtube.com/@ai_zeirishi_arai →</div></a>
+      <a class="media-card rv" href="https://x.com/araiyusuke_vb" target="_blank" rel="noopener">
+        <div class="icon">🐦</div><h3>X（旧Twitter）</h3>
+        <p>AI・freee・Claude Code 実演の気づきや小ネタを日々発信。登壇のご相談もDMで受け付けています。</p>
+        <div class="link">@araiyusuke_vb →</div></a>
+      <a class="media-card rv" href="https://note.com/crisp_hebe6571" target="_blank" rel="noopener">
+        <div class="icon">📝</div><h3>note</h3>
+        <p>freee × Claude Code、会計事務所のAI活用を、初心者にもやさしい具体例ベースで解説。</p>
+        <div class="link">note.com/crisp_hebe6571 →</div></a>
+    </div>
+    <div class="book-feature rv">
+      <div class="icon">📖</div>
+      <div style="flex:1;min-width:240px">
+        <h3>著書『会計事務所のための製販分離戦略 〜ベリーベスト流「高単価戦略」×「採用難解決」×「生産性向上」の実践ノウハウ〜』</h3>
+        <p>FKRブックス／Kindle　｜　週刊ダイヤモンド インタビュー掲載（2021年2月）</p>
+      </div>
+      <a class="btn btn-gold" href="https://www.amazon.co.jp/dp/B0DVHY4WCZ" target="_blank" rel="noopener" style="font-size:13px;padding:12px 26px">Amazonで見る</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en-label en">CONTACT</span><h2>セミナー登壇のご相談</h2>
+      <p class="sub">生成AI、会計事務所DX、Claude Code、AI時代の士業経営に関するセミナー登壇のご相談を受け付けています。現在は、個別企業への継続的なAI導入伴走支援よりも、セミナー・研修・講演形式での登壇を中心に対応しています。</p></div>
+    <div class="contact-box rv">
+      <div>
+        <h3>お問い合わせ窓口</h3>
+        <p>XのDM、またはメールにてお気軽にご連絡ください。</p>
+        <div class="contact-list">
+          <a href="https://x.com/araiyusuke_vb" target="_blank" rel="noopener"><span class="ic">𝕏</span>X（旧Twitter）のDM — @araiyusuke_vb</a>
+          <a href="mailto:araiyusukeryudo507@gmail.com"><span class="ic">✉</span>araiyusukeryudo507@gmail.com</a>
+        </div>
+      </div>
+      <div class="ask">
+        <h4>ご相談時にお知らせいただけるとスムーズです</h4>
+        <ul>
+          <li>主催者名</li><li>希望テーマ</li>
+          <li>対象者</li><li>参加予定人数</li>
+          <li>開催希望時期</li><li>実施形式（オンライン／対面）</li>
+          <li>希望時間（60分／90分／2時間／ハンズオン）</li><li>ご予算感</li>
+        </ul>
+        <div class="note">こんな方におすすめ：税理士会・士業団体・経営者団体／会計事務所の代表・幹部向け研修を企画したい企業／ChatGPTやClaudeの実務活用を初心者にわかりやすく伝えたい研修会社　など</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="en">YUSUKE ARAI</div>
+  <div>荒井 悠輔｜税理士・会計事務所向け生成AIセミナー講師</div>
+  <div style="margin-top:8px">&copy; 2026 Yusuke Arai. All Rights Reserved.</div>
+</footer>
+
+<script>
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// count-up
+const co=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;co.unobserve(e.target);
+  const el=e.target,target=+el.dataset.count,small=el.querySelector('small');
+  const suffix=small?small.outerHTML:'';let t0=null;
+  function step(ts){if(!t0)t0=ts;const p=Math.min((ts-t0)/1400,1);
+    el.innerHTML=Math.round(target*(1-Math.pow(1-p,3)))+suffix;
+    if(p<1)requestAnimationFrame(step)}
+  requestAnimationFrame(step);
+}),{threshold:.6});
+document.querySelectorAll('.num').forEach(el=>co.observe(el));
+</script>
+</body>
+</html>
