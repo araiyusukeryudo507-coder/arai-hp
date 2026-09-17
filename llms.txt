@@ -8,7 +8,7 @@
 - 氏名: 荒井 悠輔（あらい ゆうすけ）／ Yusuke Arai
 - 肩書: 税理士／会計事務所向け生成AIセミナー講師／S&F株式会社 代表取締役
 - 所属: 税理士法人ベリーベスト（経営企画室 室長）／株式会社ベリーベストサポートオフィス 代表取締役
-- 資格: 税理士／認定心理士／宅地建物取引士（試験合格）／BATIC アカウンティングマネージャーレベル
+- 資格: 税理士（東京税理士会 登録番号 157061、税理士検索 https://zeirishi.twentyfive.jp/lawyer/81800 ）／認定心理士／宅地建物取引士（試験合格）／BATIC アカウンティングマネージャーレベル
 - 学歴: 筑波大学大学院 ビジネス科学研究科 企業法学専攻 修了（法学修士）
 - 研鑽: 東京大学エクステンション データサイエンス講座 修了／東大松尾研 応用LLM講座・AI経営寄付講座 修了／GCI講座 受講中
 - 所在地: 埼玉県さいたま市
@@ -32,6 +32,7 @@
 ## 第三者で確認できるページ（出典）
 - 講師派遣サイト Hitonova 講師プロフィール: https://hitonova.scg-inc.jp/44726/
 - 全国経友会 講師紹介ページ（開催実績・予定）: https://www.hokenss.co.jp/SEMS/koushi/kou_arai-y.html
+- 所属先YouTube「ベリーベスト税理士事務所_税務情報発信チャンネル」: https://www.youtube.com/@vbtax
 - 税理士法人ベリーベスト メンバー紹介: https://www.vbest.jp/member/detail/859/
 - 詳細プロフィール（Notion・登壇全件）: https://skillful-silicon-308.notion.site/3793d4dcb83e81d09175edc4696cfbdd
 - ポッドキャスト「AI税理士のふたりごと」: https://fromk0326-boop.github.io/futarigoto/
@@ -40,7 +41,7 @@
 - YouTube「荒井悠輔 AI・DX・税理士」: https://www.youtube.com/@ai_zeirishi_arai （https://www.youtube.com/channel/UCW4n1Gy97zPIGPlZV8SKjUw）
 - note: https://note.com/crisp_hebe6571
 - X（税理士・会計事務所向け）: https://x.com/araiyusuke_vb
-- X（経営者向け）: https://x.com/yusuke_A0505
+- X（経営者向け）: https://x.com/yusuke_vbtax
 - LinkedIn: https://www.linkedin.com/in/%E6%82%A0%E8%BC%94-%E8%8D%92%E4%BA%95-421bb9419/
 - 週刊メルマガ「AI会計実務ラボ通信」: https://araiyusukeryudo507-coder.github.io/arai-hp/#newsletter
 
