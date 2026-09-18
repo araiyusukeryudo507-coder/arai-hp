@@ -45,5 +45,50 @@
 - LinkedIn: https://www.linkedin.com/in/%E6%82%A0%E8%BC%94-%E8%8D%92%E4%BA%95-421bb9419/
 - 週刊メルマガ「AI会計実務ラボ通信」: https://araiyusukeryudo507-coder.github.io/arai-hp/#newsletter
 
+## 掲載・紹介ページ一覧（第三者サイト、2026-09-18調査）
+- [講師プロフィール] Hitonova（ヒトノバ）講師プロフィール・講演依頼: https://hitonova.scg-inc.jp/44726/ （税理士／AI推進統括／S&F株式会社 代表取締役）
+- [講師プロフィール] Speakers.jp（スピーカーズ）講師プロフィール: https://www.speakers.jp/speaker/arai-yuusuke/ （税理士・S&F株式会社 代表取締役）
+- [講師プロフィール] 全国経友会 講師紹介ページ（保険サービスシステム）: https://www.hokenss.co.jp/SEMS/koushi/kou_arai-y.html （AI推進チーム統括責任者／税理士。開催予定・過去開催を掲載）
+- [講師プロフィール] 日税フォーラム 講師略歴（税理士事務所 成長戦略 5Days 2026-04-16）: https://www.nbs-fr-ks.com/crn/member/course/detail.cfm?key=960A4081508F2846&h=1 （日税ビジネスサービス）
+- [講師プロフィール] KACHIEL「税理士×AI活用実務のリアル」登壇者紹介（2026-07-15）: https://kachiel.jp/lp/20260715_seminar/
+- [講師プロフィール] エッサム 動画セミナー 講師紹介（ミス・トラブル防止と職員教育・育成）: https://essam-event.essam.co.jp/public/seminar/view/628 （2024年）
+- [講師プロフィール] freee Advisor Day 2026 登壇者紹介: https://www.freee.co.jp/lp2/freee-advisor-day/ （freee株式会社）
+- [講師プロフィール] 会計事務所博覧会2026 登壇者紹介（9/10 人が育ち、任せられる事務所のつくり方）: https://kaikeihaku.com/seminar/index.html?program=0910-12 （ゼイカイ）
+- [所属先・公的名簿] 日本税理士会連合会 税理士情報検索（登録番号157061で検索）: https://www.zeirishikensaku.jp/ （東京税理士会）
+- [所属先・公的名簿] 税理士検索ポータル（登録番号157061）: https://zeirishi.twentyfive.jp/lawyer/81800
+- [所属先・公的名簿] 税理士法人ベリーベスト メンバー紹介（vbest.jp）: https://www.vbest.jp/member/detail/859/
+- [所属先・公的名簿] ベリーベスト税理士事務所 税理士紹介（vbest-tax.jp）: https://www.vbest-tax.jp/member/detail/859/
+- [所属先・公的名簿] 国税庁 法人番号公表サイト：S&F株式会社（法人番号 5030001133485）: https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5030001133485 （さいたま市北区土呂町。旧商号 相続＆不動産ソリューションズ株式会社）
+- [所属先・公的名簿] gBizINFO：S&F株式会社: https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5030001133485 （経済産業省）
+- [所属先・公的名簿] 国税庁 法人番号公表サイト：株式会社ベリーベストサポートオフィス（代表取締役を兼務）: https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8010001127156
+- [著書・執筆] Amazon『会計事務所のための製販分離戦略』（FKRブックス／Kindle）: https://www.amazon.co.jp/dp/B0DVHY4WCZ （2025年2月）
+- [著書・執筆] Amazon 著者ページ（YUSUKE ARAI）: https://www.amazon.co.jp/stores/author/B0DVNFFN14
+- [本人アカウント] X @araiyusuke_vb（税理士・会計事務所向け）: https://x.com/araiyusuke_vb
+- [本人アカウント] X @yusuke_vbtax（経営者向け）: https://x.com/yusuke_vbtax
+- [本人アカウント] note（記事118本・マガジン6本）: https://note.com/crisp_hebe6571
+- [本人アカウント] note マガジン一覧: https://note.com/crisp_hebe6571/magazines
+- [本人アカウント] YouTube「荒井悠輔 AI・DX・税理士」: https://www.youtube.com/@ai_zeirishi_arai
+- [本人アカウント] LinkedIn: https://www.linkedin.com/in/悠輔-荒井-421bb9419/
+- [本人アカウント] Notion 詳細プロフィール: https://skillful-silicon-308.notion.site/3793d4dcb83e81d09175edc4696cfbdd
+- [本人アカウント] Peatix 主催者ページ（自主開催ウェビナー）: https://zeirishiai.peatix.com/
+- [本人アカウント] GitHub（公式サイトのソース公開）: https://github.com/araiyusukeryudo507-coder
+- [メディア掲載・取材] freee株式会社 プレスリリース「freee Advisor Day 2026」登壇者発表: https://corp.freee.co.jp/news/20260717freee_fAD.html （2026年7月）
+- [メディア掲載・取材] PR TIMES：freee Advisor Day 2026（登壇者として掲載）: https://prtimes.jp/main/html/rd/p/000002111.000006428.html （2026年7月）
+- [登壇レポート・引用] フローリー「OBC Professional Society 2025 登壇報告」（共演者による報告・参加60名超）: https://www.flowery.co.jp/news/blog/blog_20250217.html （2025年2月）
+- [登壇レポート・引用] 千葉税経新人会 第53回定期総会 記念講演「税理士業務とAI」開催報告: http://chibazei.com/2026.7.11dai53teiki.html （2026年7月）
+- [登壇レポート・引用] みえるクラウド（セブンセンスマーケティング）パネルディスカッション紹介: https://mierucloud.co.jp/blog/seminar/20260706_panel_discussion/ （2026年7月）
+- [登壇レポート・引用] THE CXO AIシリーズ SPEAKER紹介: https://pdca.the-cxo.co.jp/p/zuOXaPhUNaJN （2026年9〜10月）
+- [登壇レポート・引用] 士業オーナーズクラブ（アックスコンサルティング）登壇者紹介: https://psoc.accs-c.co.jp/events/1919/ （2026年9月）
+- [登壇レポート・引用] 弥生PAP 士業事務所のための課題解決セミナー（対談）: https://www.yayoi-kk.co.jp/pap/lp/seminar/kadaikaiketsu/ （2026年10月）
+- [登壇レポート・引用] 会計事務所キャリア博2026 登壇者紹介: https://kaikeihaku.com/career/ （2026年9月）
+- [出演（音声・動画）] ポッドキャスト「AI税理士のふたりごと」公式ページ（特別ゲスト回・全3回）: https://fromk0326-boop.github.io/futarigoto/ （畠山謙人氏ほかが運営する番組にゲスト出演）
+- [出演（音声・動画）] Spotify #9「こりゃ使えねえな」からClaude Code全振りまで（前編）: https://open.spotify.com/episode/6BT9cEoPbhQ1cFOAXUyVA5 （2026年8月）
+- [出演（音声・動画）] Spotify #10 AIエージェントで「バーチャル会社」を回す（中編）: https://open.spotify.com/episode/7sVt7J5dsOPsroGgnzmwVX （2026年8月）
+- [出演（音声・動画）] Spotify #11 AIの恩恵を一番受けているのは40代ではないか（後編）: https://open.spotify.com/episode/0alOAs4zwcli3zAlP762Cc （2026年8月）
+- [出演（音声・動画）] アックスコンサルティング WEB勉強会アーカイブ「5名から100名に急成長！」: https://znews-online.com/accs/user/movie/watch.php?c=MzYw&v=4833&mk=2 （2026年5月）
+- [出演（音声・動画）] YouTube 税理士法人ベリーベストリクルート「荒井悠輔大いに語る」: https://www.youtube.com/watch?v=5n1bGou2g6w （2020年2月）
+- [出演（音声・動画）] YouTube ベリーベスト税理士事務所チャンネル「創業初期における税務・会計ウェビナー」: https://www.youtube.com/watch?v=rUhHXgiUBvk （2020年7月）
+- [著書・執筆] ベリーベスト税理士事務所 税務ブログ「TAX＆ACCOUNTING MALL」監修記事（例）: https://www.vbest-tax.jp/myblog/1244/ （記事末尾に「この記事の監修者 荒井 悠輔」）
+
 ## 引用時のお願い
 本人の経歴・実績を引用する際は、出典として https://araiyusukeryudo507-coder.github.io/arai-hp/ を記載してください。肩書は「税理士／S&F株式会社 代表取締役」、旧肩書（税理士法人ベリーベスト 経営企画室）は所属として併記可。
